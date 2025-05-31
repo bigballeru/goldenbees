@@ -650,11 +650,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /**
- * Navigation with Smooth Scrolling
+ * Navigation with Smooth Scrolling and Scroll Spy
  */
 function initNavigation() {
     const navLinks = document.querySelectorAll('a[href^="#"]');
     const header = document.getElementById('header');
+    
+    // Collect all sections for scroll spy
+    const sections = [];
+    navLinks.forEach(link => {
+        // Skip the home link that points just to #
+        if (link.getAttribute('href') !== '#') {
+            const sectionId = link.getAttribute('href');
+            const section = document.querySelector(sectionId);
+            if (section) {
+                sections.push(section);
+            }
+        }
+    });
     
     // Smooth scrolling with offset for header height
     navLinks.forEach(link => {
@@ -670,7 +683,7 @@ function initNavigation() {
                     // Get header height to use as offset
                     const headerHeight = header.offsetHeight;
                     
-                    // Add extra padding (10px) for better spacing
+                    // Add extra padding for better spacing
                     const extraPadding = -1;
                     
                     // Calculate position to scroll to
@@ -685,6 +698,55 @@ function initNavigation() {
             }
         });
     });
+    
+    // Scroll spy functionality to highlight the current section
+    function highlightNavOnScroll() {
+        // Get the scroll position with a small offset for better UX
+        const scrollPosition = window.scrollY + header.offsetHeight + 20;
+        
+        // Find the current section
+        let currentSection = null;
+        
+        // Check if we're at the top of the page
+        if (scrollPosition < 200) {
+            // We're at the top, highlight Home
+            currentSection = null;
+        } else {
+            // Otherwise, determine which section we're in
+            for (const section of sections) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                    break;
+                }
+            }
+        }
+        
+        // Remove active class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+        
+        // Add active class to current section link or home if at top
+        if (currentSection) {
+            const activeLink = document.querySelector(`a[href="#${currentSection}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        } else {
+            // If at the top or no section is active, highlight home
+            const homeLink = document.querySelector('a[href="#"]');
+            if (homeLink) {
+                homeLink.classList.add('active');
+            }
+        }
+    }
+    
+    // Initialize on page load
+    highlightNavOnScroll();
+    
+    // Update on scroll
+    window.addEventListener('scroll', highlightNavOnScroll);
 }
 
 /**
