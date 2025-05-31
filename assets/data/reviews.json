@@ -1,0 +1,76 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Jeff Sorenson",
+      "date": "May 15, 2025",
+      "rating": 5,
+      "text": "Place is an absolute vibe. The food is incredible, haitian food is full of flavor but this is over the top. Service was amazing at well. The juices were on point, just like in Haiti. Chicken and Griot are delicious, can't wait to come back!!!! Thank you.",
+      "profileImage": "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    {
+      "id": 2,
+      "author": "Valerie Saravia",
+      "date": "April 28, 2025",
+      "rating": 5,
+      "text": "The food and service from this place are top tier!! The employees are very friendly and the food was the best thing I have tasted here so far in Provo!",
+      "profileImage": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "id": 3,
+      "author": "Laetitia Bastian",
+      "date": "May 2, 2025",
+      "rating": 5,
+      "text": "Such amazing atmosphere, the music,how happy everyone was when we went on opening night. The food was phenomenal. We had the griot and chicken with the rice and plantains. There is really no need for you to be cooking at home, just go get at Golden Bees.",
+      "profileImage": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      "id": 4,
+      "author": "David Chen",
+      "date": "May 10, 2025",
+      "rating": 5,
+      "text": "First time trying Golden Bees and I'm already planning my next visit! The ackee and saltfish was authentic and reminded me of my grandmother's cooking. Great portion sizes and reasonable prices.",
+      "profileImage": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      "id": 5,
+      "author": "Amara Thompson",
+      "date": "April 15, 2025",
+      "rating": 5,
+      "text": "Hidden gem with amazing Caribbean flavors! Their rum cake dessert is heavenly and the sorrel drink is perfectly spiced. The staff went above and beyond to accommodate our large group.",
+      "profileImage": "https://randomuser.me/api/portraits/women/26.jpg"
+    },
+    {
+      "id": 6,
+      "author": "James Wilson",
+      "date": "May 22, 2025",
+      "rating": 5,
+      "text": "The flavors at Golden Bees are out of this world! Tried the roti with curry chicken and it was delicious. Service was a little slow but the quality of food makes it worth the wait.",
+      "profileImage": "https://randomuser.me/api/portraits/men/83.jpg"
+    },
+    {
+      "id": 7,
+      "author": "Aisha Patel",
+      "date": "May 8, 2025",
+      "rating": 5,
+      "text": "As someone from Trinidad, I'm very picky about Caribbean food, but Golden Bees nails it! Their doubles are authentic and the pepper sauce has just the right kick. Can't wait to bring my family here!",
+      "profileImage": "https://randomuser.me/api/portraits/women/37.jpg"
+    },
+    {
+      "id": 8,
+      "author": "Michael Foster",
+      "date": "April 30, 2025",
+      "rating": 5,
+      "text": "Best Caribbean restaurant I've found since moving to the area. The callaloo soup was fantastic and the coconut rice was perfectly cooked. Great atmosphere and friendly service!",
+      "profileImage": "https://randomuser.me/api/portraits/men/67.jpg"
+    },
+    {
+      "id": 9,
+      "author": "Bobby Foster",
+      "date": "April 30, 2025",
+      "rating": 5,
+      "text": "Best Caribbean restaurant I've found since moving to the area. The callaloo soup was fantastic and the coconut rice was perfectly cooked. Great atmosphere and friendly service!",
+      "profileImage": "https://randomuser.me/api/portraits/men/67.jpg"
+    }
+  ]
+}

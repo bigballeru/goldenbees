@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goldenbees.com/sitemap.xml
